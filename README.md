@@ -5,9 +5,34 @@
 ![Red](https://img.shields.io/badge/Protocolo-UDP-orange)
 ![Modelo](https://img.shields.io/badge/AI-CRNN-yellow)
 
-Este documento describe la estructura, componentes y arquitectura de interconectividad de la interfaz de usuario diseñada para el monitoreo de un sistema distribuido de detección de disparos, basado en módulos de captura de audio y un modelo **CRNN** (*Convolutional Recurrent Neural Network*) desde el codigo mein,py.
+Este documento describe la estructura, componentes y arquitectura de interconectividad de la interfaz de usuario diseñada para el monitoreo de un sistema distribuido de detección de disparos, basado en módulos de captura de audio y un modelo **CRNN** (*Convolutional Recurrent Neural Network*).
 
 ---
+
+## 📑 Tabla de Contenidos
+1. [Arquitectura del Ecosistema e Integración](#-arquitectura-del-ecosistema-e-integración)
+2. [Representación del Entorno y Estado de los Sensores](#-representación-del-entorno-y-estado-de-los-sensores)
+3. [Panel de Control: Monitoreo en Tiempo Real](#-panel-de-control-monitoreo-en-tiempo-real)
+4. [Configuraciones: Ajustes del Sistema](#-configuraciones-ajustes-del-sistema-y-seguimiento-de-estado)
+5. [Arquitectura de Conectividad y Procesamiento Multihilo](#-arquitectura-de-conectividad-y-procesamiento-multihilo)
+
+---
+
+## 🚀 Arquitectura del Ecosistema e Integración
+
+El sistema opera mediante la orquestación de tres componentes fundamentales. La ejecución principal se gestiona desde el archivo **`main.py`**, el cual centraliza la recepción de datos y la inferencia.
+
+Este proyecto integra y depende de los siguientes repositorios especializados:
+
+1.  **🧠 Núcleo de Inteligencia Artificial:**
+    * **Repositorio:** [Red Neuronal Detección de Disparos UNIMAGDALENA](https://github.com/devhuday/Red_neuronal_deteccion_de_disparos_UNIMAGDALENA/tree/main/Tesis%20IA)
+    * **Función:** Proporciona la arquitectura de la red **CRNN** y los pesos entrenados para la clasificación de eventos acústicos.
+2.  **🎙️ Captura de Audio de Alta Precisión:**
+    * **Repositorio:** [ESP32 Mic INMP441](https://github.com/lob117/esp32_mic_inmp441)
+    * **Función:** Proporciona el firmware base para los módulos sensores. Gestiona la configuración del protocolo I2S y la transmisión UDP de baja latencia necesaria para el streaming de audio.
+
+**Flujo de Ejecución:**
+Para iniciar el sistema de monitoreo, asegúrese de que los módulos ESP32 estén transmitiendo y ejecute: main.py
 
 ## 📑 Tabla de Contenidos
 1. [Representación del Entorno y Estado de los Sensores](#-representación-del-entorno-y-estado-de-los-sensores)
