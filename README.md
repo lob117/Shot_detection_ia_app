@@ -5,7 +5,7 @@
 ![Red](https://img.shields.io/badge/Protocolo-UDP-orange)
 ![Modelo](https://img.shields.io/badge/AI-CRNN-yellow)
 
-Este documento describe la estructura, componentes y arquitectura de interconectividad de la interfaz de usuario diseñada para el monitoreo de un sistema distribuido de detección de disparos, basado en módulos de captura de audio y un modelo **CRNN** (*Convolutional Recurrent Neural Network*).
+Este documento describe la estructura, componentes y arquitectura de interconectividad de la interfaz de usuario diseñada para el monitoreo de un sistema distribuido de detección de disparos, basado en módulos de captura de audio y un modelo **CRNN** (*Convolutional Recurrent Neural Network*) desde el codigo mein,py.
 
 ---
 
