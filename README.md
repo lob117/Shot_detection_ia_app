@@ -80,8 +80,7 @@ El sistema opera como una malla distribuida y cooperativa, garantizando baja lat
     * *Hilo Productor:* Captura constante del flujo de audio.
     * *Hilo Consumidor:* Procesa la información sin interrumpir la escucha continua.
 * **Colas FIFO:** Se utilizan buffers intermedios (*First-In, First-Out*) para absorber diferencias de velocidad de procesamiento y garantizar que los paquetes de audio conserven su estricto orden cronológico.
-<img width="1917" height="902" alt="Captura de pantalla 2025-05-13 224441" src="https://github.com/user-attachments/assets/e2bb5415-19bf-43bc-9263-9e25bab40d5c" />
-<img width="1917" height="902" alt="Captura de pantalla 2025-05-13 224441" src="https://github.com/user-attachments/assets/42320589-f4fd-4a01-a917-b1b8810e340c" />
+
 <img width="876" height="539" alt="Captura de pantalla 2025-05-27 021728" src="https://github.com/user-attachments/assets/f9644b42-f665-4f28-af65-e535ff24cb6e" />
 
 ### 🎛️ Pipeline de Señal Digital (DSP)
